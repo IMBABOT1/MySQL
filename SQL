@@ -108,3 +108,8 @@ Query the average population for all cities in CITY, rounded down to the nearest
 SELECT FLOOR(AVG(population)) FROM CITY
 WHERE name = name;
 
+______________________________________________________________________________________
+Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
+SELECT sum(population) FROM CITY
+WHERE COUNTRYCODE like 'JPN';
+
