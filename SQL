@@ -34,6 +34,8 @@ If there is more than one smallest or largest city, choose the one that comes fi
 SET @v1 := (SELECT (city) FROM STATION
     WHERE (city) like 'a%'
     ORDER BY length(city) ASC LIMIT 0,1);
+__________________________________________________________
+
     
 SET @v2 := (SELECT (city) FROM STATION
     ORDER BY length(city) DESC LIMIT 0,1);
